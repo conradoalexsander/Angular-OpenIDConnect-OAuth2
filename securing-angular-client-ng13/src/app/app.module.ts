@@ -12,15 +12,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminModule } from './admin/admin.module';
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { CoreModule } from './core/core.module';
 import { ContactUsComponent } from './home/contact-us.component';
+import { HomeComponent } from './home/home.component';
+import { SigninRedirectCallbackComponent } from './home/signin-redirect-callback.component';
+import { SignoutRedirectCallbackComponent } from './home/signout-redirect-callback.component';
+import { AddEditMilestoneDialogComponent } from './projects/add-edit-milestone-dialog.component';
 import { ProjectListComponent } from './projects/project-list.component';
 import { ProjectComponent } from './projects/project.component';
-import { AddEditMilestoneDialogComponent } from './projects/add-edit-milestone-dialog.component';
 
-import { CoreModule } from './core/core.module';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { CoreModule } from './core/core.module';
     ContactUsComponent,
     ProjectListComponent,
     ProjectComponent,
-    AddEditMilestoneDialogComponent
+    AddEditMilestoneDialogComponent,
+    SigninRedirectCallbackComponent,
+    SignoutRedirectCallbackComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,7 @@ import { CoreModule } from './core/core.module';
   providers: [
   ],
   bootstrap: [AppComponent],
-  entryComponents:[
+  entryComponents: [
     AddEditMilestoneDialogComponent
   ]
 })

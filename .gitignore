@@ -9,6 +9,7 @@ dist/
 tmp/
 app/**/*.js
 app/**/*.js.map
+.angular
 
 # dependencies
 node_modules/
@@ -16,6 +17,7 @@ bower_components/
 
 # IDEs and editors
 .idea/
+.vscode
 
 # misc
 .sass-cache/
